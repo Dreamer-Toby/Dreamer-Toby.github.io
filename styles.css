@@ -25,7 +25,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: Spectral, 'Songti SC', 'Noto Serif CJK SC', SimSun, serif;
+  font-family: Spectral, Georgia, serif;
   font-size: 18px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -53,14 +53,15 @@ h1 em { color: var(--accent); font-weight: 400; }
 .intro-note { font-size: 16px; color: var(--muted); }
 .text-link { display: inline-flex; gap: 32px; align-items: center; padding: 12px 0 6px; margin-top: 26px; border-bottom: 1px solid var(--ink); font-size: 16px; }
 .text-link:hover { border-color: var(--accent); }
-figure img { display: block; width: 100%; height: auto; }
+figure { width: min(100%, 400px); justify-self: center; }
+figure img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; object-position: left center; border-radius: 50%; }
 figcaption { display: flex; justify-content: space-between; padding-top: 13px; color: var(--muted); font-size: 13px; }
 figcaption span:first-child { font-style: italic; }
 .section { display: grid; grid-template-columns: .85fr 1.4fr; gap: 64px; padding: 38px 0 44px; border-top: 1px solid var(--line); }
 h2 { font-size: 30px; line-height: 1.3; letter-spacing: -.7px; margin-top: 9px; }
 .education-detail { display: flex; justify-content: space-between; align-items: start; gap: 20px; padding-top: 4px; }
 .education-detail h3 { font-size: 27px; line-height: 1.4; letter-spacing: -.5px; }
-.education-detail p, .section-note { font-size: 15px; color: var(--muted); margin-top: 8px; }
+.education-detail p { font-size: 15px; color: var(--muted); margin-top: 8px; }
 .education-detail .year { white-space: nowrap; font-size: 16px; margin-top: 7px; }
 .research { padding-bottom: 60px; }
 .work-list { list-style: none; margin: 0; padding: 0; }
@@ -91,7 +92,7 @@ footer a { padding-bottom: 8px; }
   h2 { font-size: 28px; }
   .education-detail h3 { font-size: 25px; }
   .work-list h3 { font-size: 34px; }
-  .section-note { margin-top: 4px; }
+  .education-detail { flex-wrap: wrap; gap: 4px 20px; }
   .research { padding-bottom: 40px; }
   footer { flex-direction: column; gap: 6px; font-size: 13px; padding-top: 20px; }
   footer a { align-self: start; padding-block: 8px; }
