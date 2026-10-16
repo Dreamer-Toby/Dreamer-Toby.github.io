@@ -75,7 +75,6 @@ h2 { font-size: 27px; line-height: 1.4; letter-spacing: -.6px; }
 .paper-links { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 20px; margin-top: 10px; font-size: 15px; }
 .paper-links a { color: var(--accent); padding: 5px 0; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--line); }
 .paper-links a:hover { text-decoration-color: var(--accent); }
-.contribution { font-size: 13px; color: var(--muted); }
 footer { display: flex; justify-content: space-between; border-top: 1px solid var(--line); padding: 20px 0 26px; color: var(--muted); font-size: 14px; }
 @media (max-width: 900px) {
   .page { padding-inline: 32px; }
