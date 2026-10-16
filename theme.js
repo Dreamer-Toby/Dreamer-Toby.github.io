@@ -15,8 +15,9 @@
   document.addEventListener('DOMContentLoaded', () => {
     const button = document.querySelector('.theme-toggle');
     function updateButton() {
-      button.textContent = theme === 'dark' ? 'Light' : 'Dark';
-      button.setAttribute('aria-pressed', String(theme === 'dark'));
+      const label = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+      button.setAttribute('aria-label', label);
+      button.title = label;
     }
     updateButton();
     button.hidden = false;

@@ -20,13 +20,22 @@
       <nav aria-label="Main navigation">
         <a href="#education">Education</a>
         <a href="#publications">Publications</a>
-        
-        <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" hidden>Dark</button>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" hidden>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/></svg>
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        </button>
       </nav>
     </header>
     <main id="main">
       <section class="intro" aria-labelledby="intro-title">
-        <img class="portrait" src="assets/portrait.jpg" width="1800" height="1200" alt="Yao Bingchen taking a photograph outdoors" fetchpriority="high">
+        <div class="profile">
+          <img class="portrait" src="assets/portrait.jpg" width="1800" height="1200" alt="Yao Bingchen taking a photograph outdoors" fetchpriority="high">
+          <div class="contact-links" aria-label="Contact and profiles">
+            <a href="mailto:yaobingchen0515@gmail.com">yaobingchen0515@gmail.com</a>
+            <a href="mailto:yaobingchen@zju.edu.cn">yaobingchen@zju.edu.cn</a>
+            <div class="profile-links"><a href="https://github.com/Dreamer-Toby">GitHub</a><a href="https://scholar.google.com/citations?user=bJ5B45cAAAAJ&amp;hl=zh-CN">Google Scholar</a></div>
+          </div>
+        </div>
         <div class="intro-copy">
           <h1 id="intro-title">Yao Bingchen <span class="chinese-name" lang="zh-CN">姚秉辰</span></h1>
           <p class="welcome">Welcome to my homepage!</p>
